@@ -7,6 +7,18 @@ The project supports features like appointment scheduling, enterprise-grade secu
 
 ---
 
+**✨ Features**
+
+1. 🎧 Voice Conversations – Real-time AI voice assistant powered by Retell AI.
+
+2. 📅 Intelligent Scheduling – Book and manage appointments with AI guidance.
+
+3. 🔒 Enterprise Security – Encrypted communication and compliance-ready.
+
+4. ⚡ Real-Time Sync – Seamless updates across devices & platforms.
+
+5. 🌗 Dark/Light Mode – Toggle between accessible themes for better UX.
+
 ## 🛠️ Tech Stack  
 **Frontend:**  
 - React (Vite)  
@@ -36,6 +48,31 @@ The project supports features like appointment scheduling, enterprise-grade secu
   - E -->|Streamed Voice| B
   - B -->|Plays to User| A
 ---
+## ⚙️ Setup  
 
+### 1️⃣ Clone the Repository  
+```bash
+git clone https://github.com/your-username/shadowsupport.git
 cd shadowsupport
+
+cd backend
+npm install
+
+PORT=5000
+OPENAI_API_KEY=your_openai_api_key_here
+
+npm start
+
+➡️ Backend available at http://localhost:5000
+
+cd frontend
+npm install
+
+VITE_API_BASE_URL=http://localhost:5000
+
+npm run dev
+
+➡️ Frontend available at http://localhost:5173
+
+
 
