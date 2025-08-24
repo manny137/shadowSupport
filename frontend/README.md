@@ -1,12 +1,46 @@
-# React + Vite
+# ShadowSupport 🎙️  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 Overview  
+ShadowSupport is an AI-powered customer support platform that enables **real-time, voice-driven conversations** between users and an intelligent agent. It combines a **React (Vite) frontend** with a **Node.js/Express backend** and integrates with Retell AI SDK for live conversational experiences.  
 
-Currently, two official plugins are available:
+The project supports features like appointment scheduling, enterprise-grade security, and real-time synchronization, making it a future-ready AI concierge solution.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack  
+**Frontend:**  
+- React (Vite)  
+- Tailwind CSS  
+- Lucide Icons  
+- Retell Web SDK  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Backend:**  
+- Node.js  
+- Express.js  
+- CORS & dotenv  
+
+**Other Tools & Services:**  
+- Retell AI API  
+- REST API Communication  
+- Environment Variables for secure config  
+
+**Technical Flowchart:**
+  - A[User] -->|Opens Web App| B[React Frontend]
+  - B -->|Fetch Call Token| C[Backend (Express)]
+  - C -->|Requests Token| D[Retell AI API]
+  - D -->|Generates Call Token| C
+  - C -->|Returns Token| B
+  - B -->|Start Voice Call| E[Retell Web SDK]
+  - E -->|Real-time Conversation| D
+  - D -->|AI Response| E
+  - E -->|Streamed Voice| B
+  - B -->|Plays to User| A
+---
+
+## ⚙️ Setup  
+
+### 1️⃣ Clone the Repository  
+```bash
+git clone https://github.com/your-username/shadowsupport.git
+cd shadowsupport
+
